@@ -1,0 +1,191 @@
+@mixin avarage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+$color: #F0B916;
+$logoColor : #FFFFFF;
+$solidColor : #423D38;
+
+#navigator {
+    height: 100vh;
+    background-image: url(https://preview.colorlib.com/theme/pulse/img/slider/slider-3.jpg.webp);
+    background-size: cover;
+    position: relative;
+     .logo {
+ 
+         border: 1px solid $solidColor;
+         @include avarage;
+         font-size: 36px;
+ 
+         &__text {
+             color: $logoColor;
+         }
+         span {
+             color: $color;
+         }
+         
+     }
+     
+     .slogan {
+        width: 50%;
+        position: absolute;
+        bottom: 250px;
+        text-align: center;
+        color: white;
+        font-size: 220px
+        
+     }
+
+     .list {
+        @include avarage;
+         border: 1px solid $solidColor;
+         font-size: 16px;
+         ul {
+             display: flex;
+             list-style-type: none;
+             align-items: center;
+             gap: 40px;
+             color: $logoColor;
+             
+            }
+     }
+     
+     .contact {
+         font-size: 16px;
+         border: 1px solid $solidColor;
+         @include avarage;
+         
+         p {
+             span {
+                 color: $color;
+             }
+             a {
+                 color: $logoColor;
+                 text-decoration: none;
+             }
+         }
+     }
+
+     .menuIcon {
+        display: none;
+     }
+
+     @media only screen and (max-width: 1094px) {
+        .menuIcon {
+            display: block;
+            color: $logoColor;
+            font-size: xx-large;
+            margin-left: 90px;
+         }
+         .list {
+            display: none;
+         }
+         .contact {
+            display: none;
+         }
+      }
+ }
+ 
+ #welcome {
+     height: 100vh;
+     h2 {
+         font-size: 48px;
+     }
+ 
+     .imza {
+         width: 150px;
+         height: 100px;
+         
+         img {
+             width: 100%;
+             height: 100%;
+             object-fit: contain;
+         }
+     }
+  
+ }
+ 
+ #testimonials {
+     background-image: url(https://preview.colorlib.com/theme/pulse/img/review-bg.jpg.webp);
+     background-size: cover;
+     height: 100vh;
+     color: $logoColor;
+     h2 {
+         font-size: 48px;
+         // color: #FFFFFF;
+     }
+ 
+     .textbox {
+         height: 100px;
+         background-color: red;
+     }
+     .artur {
+         color: $color;
+     }
+ }
+ 
+ #ourservices {
+     height: auto;
+     h2 {
+         font-size: 48px;
+     }
+ }
+ 
+ #ourmenu {
+     height: auto;
+     background-image: url(https://preview.colorlib.com/theme/pulse/img/menu-bg.jpg.webp);
+     background-size: cover;
+     color: $logoColor;
+  
+ 
+ 
+     .menuButton {
+         padding: 15px 55px;
+         border: none;
+         font-weight: 500;
+         font-size: 18px;
+         background-color: $color;
+ 
+     }
+ }
+ 
+ #adminpanel {
+     height: auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 30px;
+     
+ 
+     th,td {
+         border: 1px solid $solidColor;
+         padding: 15px;
+     }
+     tr {
+         text-align: center;
+     }
+ }
+ 
+ #add {
+    height: 100vh;
+ }
+
+ .map {
+    height: 450px;
+    background-image: url(https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i16!2i32753!3i21798!4i256!2m3!1e0!2sm!3i693439917!2m3!1e2!6m1!3e5!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&key=AIzaSyB0YyDTa0qqOjIerob2VTIwo_XVMhrruxo&token=74430);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#footer {
+    height: 500px;
+    background-image: url(https://preview.colorlib.com/theme/pulse/img/footer-bg.jpg.webp);
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
