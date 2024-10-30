@@ -14,11 +14,6 @@ function Home() {
             <Testimonials />
             <Ourservices />
             <Ourmenu />
-            <Map />
-           
-
-
-
         </>
     )
 }

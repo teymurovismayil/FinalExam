@@ -34,7 +34,7 @@ function NavBarSection() {
                             </div>
                             <div className="col-3 contact">
                                 <p>
-                                    <span>Reservations</span>
+                                    <span>Reservations </span>
                                     <FaPhoneAlt style={{ color: '#FFFFFF' }} />
                                     <a href="#"> 652-345 3222 11</a>
                                 </p>

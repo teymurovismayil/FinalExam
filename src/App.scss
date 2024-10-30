@@ -14,18 +14,14 @@ $solidColor : #423D38;
     background-size: cover;
     position: relative;
      .logo {
- 
-         border: 1px solid $solidColor;
          @include avarage;
          font-size: 36px;
- 
          &__text {
              color: $logoColor;
          }
          span {
              color: $color;
-         }
-         
+         }   
      }
      
      .slogan {
@@ -40,7 +36,6 @@ $solidColor : #423D38;
 
      .list {
         @include avarage;
-         border: 1px solid $solidColor;
          font-size: 16px;
          ul {
              display: flex;
@@ -48,15 +43,14 @@ $solidColor : #423D38;
              align-items: center;
              gap: 40px;
              color: $logoColor;
-             
+             margin-top: 20px;
             }
      }
      
      .contact {
          font-size: 16px;
-         border: 1px solid $solidColor;
          @include avarage;
-         
+         margin-top: 30px;
          p {
              span {
                  color: $color;

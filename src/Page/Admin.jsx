@@ -33,7 +33,6 @@ function Admin() {
 
     return (
         <>
-
             <section id='adminpanel' className='mt-5' >
                 <input onInput={(e)=>setInpValue(e.target.value)} type="text" placeholder='Search' className='w-50' />
                 <select onChange={(e)=>setCngValue(e.target.value)}>
@@ -51,7 +50,6 @@ function Admin() {
                             <th>Edit</th>
                             <th>Delete</th>
                         </tr>
-
                         {
                             sortData().map((el) => {
                                 return (
@@ -66,13 +64,10 @@ function Admin() {
                                 )
                             })
                         }
-
-
                     </thead>
                 </table>
                 <Link to='/add'><button  className='btn btn-outline-secondary'>Add</button></Link>
             </section>
-
         </>
     )
 }

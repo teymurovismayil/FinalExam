@@ -13,7 +13,6 @@ function Ourmenu() {
     
     return (
         <>
-
             <section id='ourmenu'>
                 <div className='text-center  p-5 mt-5 '>
                     <GiHotMeal style={{ fontSize: '76px', color: '#F0B916' }} />
@@ -35,16 +34,10 @@ function Ourmenu() {
                                 )
                             })
                         }
-                        
-                     
-
                     </div>
                     <div className='d-flex justify-content-center'><button className='menuButton'>See More</button></div>
                 </div>
-
-
             </section>
-
         </>
     )
 }
